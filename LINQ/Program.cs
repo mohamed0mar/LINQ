@@ -53,16 +53,60 @@
             //var result = cars.FirstOrDefault();
             //var result = cars.FirstOrDefault(c => c.VIN == "1HGBH41JXMN109186");
             //if the cars is empty we can Dafault value of the type 
-            
-            Car defaultCar = new Car(1, "Default Car", "Default",2000, "Default", "Default",000);
-        
-            var result = cars.FirstOrDefault(defaultCar);
+
+            //Car defaultCar = new Car(1, "Default Car", "Default",2000, "Default", "Default",000);
+
+            //var result = cars.FirstOrDefault(defaultCar);
 
 
-            Console.WriteLine(result);
+            //Console.WriteLine(result);
             #endregion
 
 
+            #region Last || LastOrDefault
+            //LINQ Last method is used to return the Last element of a sequence that satisfies a specified condition.
+            //If no element satisfies the condition, it throws an exception Or is no Element in Collection.
+            ////LINQ LastOrDefault method is used to return the Last element of a sequence that satisfies a specified condition.
+            //If no element satisfies the condition, it returns the default value of the type (null for reference types, 0 for numeric types, etc.)
+            //FirstOrDefault and LastOrDefault throw exception if the collection is NULL.
+
+
+            //cars = null; //Empty collection to demonstrate FirstOrDefault
+            //var result = cars.Last();
+            //var result = cars.First(c => c.ManufactureYear >= 2023);
+
+
+            //var result = cars.FirstOrDefault();
+            //var result = cars.FirstOrDefault(c => c.VIN == "1HGBH41JXMN109186");
+            //if the cars is empty we can Dafault value of the type 
+
+            //Car defaultCar = new Car(1, "Default Car", "Default",2000, "Default", "Default",000);
+
+            //var result = cars.FirstOrDefault(defaultCar);
+
+
+            //Console.WriteLine(result);
+            #endregion
+
+            #region Single() || SingleOrDefault
+            //Single method is used to return the only element of a sequence that satisfies a specified condition.
+            //If no element satisfies the condition, it throws an exception.
+            //If more than one element satisfies the condition, it throws an exception.
+            //SingleOrDefault method is used to return the only element of a sequence that satisfies a specified condition.
+            //If no element satisfies the condition, it returns the default value of the type (null for reference types, 0 for numeric types, etc.)
+            //If more than one element satisfies the condition, it throws an exception.
+
+           //var result = cars.Where(IsForf).Single();
+           //var result = cars.Single(IsForf);
+
+            //Console.WriteLine(result);
+            #endregion
+
+
+            //static bool IsForf(Car car)
+            //{
+            //    return car.Make=="Ford";
+            //}
         }
     }
 }
